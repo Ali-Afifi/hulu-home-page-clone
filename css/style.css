@@ -1,0 +1,17 @@
+.container {
+    background-color: pink;
+    width: 50%;
+    height: 300px;
+    margin: 150px auto;
+    padding: 16px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.item {
+    background-color: rgb(156, 156, 255);
+    margin: 10px;
+
+}
