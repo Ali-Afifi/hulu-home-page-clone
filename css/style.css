@@ -238,6 +238,67 @@ a:hover {
 	text-decoration: underline;
 }
 
+.categories {
+	padding: 4rem 3rem;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.categories .text {
+	padding-bottom: 2rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.categories .text h4 {
+	color: #03ca70;
+}
+
+.categories .text h1 {
+	font-size: 4rem;
+	font-weight: 700;
+}
+
+.categories .text p {
+	font-size: 1.3rem;
+	text-align: center;
+	padding: 0 15%;
+}
+
+.categories .posters {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.categories .posters .poster {
+	flex-basis: 25%;
+	flex-shrink: 1;
+
+	background: linear-gradient(156.82deg, rgba(0,0,0,0.6) 4.58%, rgba(0,0,0,0) 69.61%),linear-gradient(24.5deg, rgba(0,0,0,0.2) 4.71%, rgba(0,0,0,0) 71.49%), url(https://via.placeholder.com/294x450/ccc);
+	height: 450px;
+	width: auto;
+	margin: 1rem;
+	padding: 1.6rem;
+}
+
+.categories .posters .poster h4 {
+	font-weight: 100;
+}
+
+.categories .posters .last-poster .poster {
+	height: 450px;
+	width: 294px;
+}
+
+.categories .posters .last-poster .legal-text {
+	font-size: 0.63rem;
+	margin: 1rem;
+}
+
 /* media queries */
 
 @media(max-width: 768px) {
@@ -257,6 +318,7 @@ a:hover {
 		align-content: center;
 
 		text-align: center;
+		padding: 1.8rem 0;
 	}
 
 	.sub-header .logos {
@@ -323,5 +385,50 @@ a:hover {
 
 	.sub-header .btn {
 		order: 4;
+	}
+
+	.categories .text h1 {
+		text-align: center;
+		font-size: 2.5rem;
+	}
+
+	.categories .text p {
+		padding: 0;
+		font-size: 1rem;
+	}
+
+	.categories .posters {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.categories .posters .poster {
+		flex-basis: auto;
+		flex-shrink: 1;
+		flex-grow: 1;
+
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 228px;	
+		padding: 0.7rem;
+		margin-bottom: -5rem;
+
+		
+	}
+
+	.categories .posters .poster h4 {
+		font-size: 0.7rem;
+	}
+
+	.categories .posters .poster h2 {
+		font-size: 1rem;
+	}
+
+	.categories .posters .last-poster .poster {
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 228px;
+		margin-bottom: -5rem;
 	}
 }
